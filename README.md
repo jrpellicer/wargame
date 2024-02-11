@@ -1,2 +1,2 @@
 # wargame
-Wargame de introudcción a Linux para CFs de Informática
+Wargame de introducción a Linux para CFs de Informática
