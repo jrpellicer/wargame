@@ -16,7 +16,7 @@ Para empezar a jugar, el usuario del nivel 0 es **turtle00** y su contraseña es
 
 La contraseña para el nivel 1 la encontrarás en un archivo llamado *readme*
 
-Comandos que te pueden ayudar: *ls, cat, exit*
+Comandos que te pueden ayudar: `ls, cat, exit`
 
 ## Nivel 1
 
