@@ -1,5 +1,5 @@
 # wargame
-Wargame de introducción a Linux para CFs de Informática
+Wargame de introducción a Linux para CFs de Informática basado y adaptado del nivel [Bandit](https://overthewire.org/wargames/bandit/) de los wargames de **OverTheWire**.
 
 ## Despliegue
 

@@ -118,7 +118,10 @@ Comandos que te pueden ayudar: `ls, cd, cat, file, id`
 
 ## Nivel 15
 
-La contraseña del siguente nivel está guardada en un fichero del repositorio localhost:/opt/git/turtle.git
+La contraseña del siguente nivel está guardada en un fichero del siguiente repositorio:
+```
+localhost:/opt/git/turtle.git
+```
 Pero ojo, el Sr. Cangrejo ha creado una nueva versión de ese fichero y ha borrado la contraseña.
 
 Comandos que te pueden ayudar: `ls, cd, cat, git clone, git log, git diff`
