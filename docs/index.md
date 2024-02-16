@@ -22,7 +22,10 @@ Comandos que te pueden ayudar: `ls, cat, exit`
 
 El señor cangrejo ha escondido la contraseña del siguiente nivel en un fichero oculto.
 
-Comandos que te pueden ayudar: *ls, cd, cat*
+Comandos que te pueden ayudar: 
+```
+ls, cd, cat
+```
 
 ## Nivel 2
 
