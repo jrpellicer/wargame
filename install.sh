@@ -6,8 +6,12 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 fi
 
+# Directorio donde está instalado este script
+script=$(readlink -f $0)
+dir_base=`dirname $script`
+
 # Niveles (incluido el 0)
-niveles=17
+niveles=18
 
 # Directorio donde se almacenarán las contraseñas
 password_dir="/etc/turtle_pass"
@@ -221,7 +225,7 @@ chgrp turtle08 /home/turtle08/.ssh
 mv /home/turtle07/clave.privada.pub /home/turtle08/.ssh/authorized_keys
 chown turtle08:turtle08 /home/turtle08/.ssh/authorized_keys
 
-echo "echo -e 'La contraseña del siguiente nivel está almacenada en /etc/turtle_pass/turtle08, pero desgraciadamente solo la puede ver el usuario de nivel 7. No te preocupes, el señor Cangrejo nos ha dejado una clave privada de SSH para poder pasar de nivel.\n'" >> /home/turtle07/.bashrc
+echo "echo -e 'La contraseña del siguiente nivel está almacenada en /etc/turtle_pass/turtle08, pero desgraciadamente solo la puede ver el usuario de nivel 8. No te preocupes, el señor Cangrejo nos ha dejado una clave privada de SSH para poder pasar de nivel.\n'" >> /home/turtle07/.bashrc
 echo "echo -e 'Comandos relacionados: ls, cd, cat, ssh, scp, ssh-keygen'" >> /home/turtle07/.bashrc
 echo "echo -e 'Páginas de ayuda: https://help.ubuntu.com/community/SSH/OpenSSH/Keys\n'" >> /home/turtle07/.bashrc
 
@@ -334,6 +338,31 @@ echo "echo -e 'La contraseña del siguente nivel está guardada en un fichero de
 echo "echo -e 'Pero ojo, el Sr. Cangrejo ha creado una nueva versión de ese fichero y ha borrado la contraseña.\n'" | sudo tee -a /home/turtle15/.bashrc > /dev/null 
 echo "echo -e 'Comandos relacionados: ls, cd, cat, git clone, git log, git diff\n'" >> /home/turtle15/.bashrc
 
+##################
+# Level 16
+##################
+echo "@reboot python3 $dirbase/servidor.py" >> /etc/cron.d
+python3 $dirbase/servidor.py &
+
+cp $dirbase/cangrejo /home/turtle16/
+cp $dirbase/tortuga /home/turtle16/
+chgrp turtle16 /home/turtle16/cangrejo
+chmod 640 /home/turtle16/cangrejo
+chgrp turtle16 /home/turtle16/tortuga
+chmod 640 /home/turtle16/tortuga
+
+echo "echo -e 'El Sr. Cangrejo ha dejado en localhost un servicio de red escuchando por un puerto alque le podemos mandar mensajes.'" | sudo tee -a /home/turtle16/.bashrc > /dev/null 
+echo "echo -e 'La única pista que nos ha dado es que es un puerto que se encuentra entre el 20000 y el 30000.\n'" | sudo tee -a /home/turtle16/.bashrc > /dev/null
+echo "echo -e 'Para que nos devuelva la respuesta correcta hemos de pasar un número octal de 3 cifras relacionado con los permisos del fichero cangrejo.\n'" | sudo tee -a /home/turtle16/.bashrc > /dev/null 
+echo "echo -e 'Comandos relacionados: nmap, nc, ssh, ls\n'" >> /home/turtle16/.bashrc
+
+##################
+# Level 17
+##################
+echo -e "\n  La respuesta a la Gran Pregunta...\n\n\n\n                   ...del Sentido de La Vida, del Universo y de Todo Lo Demás ...\n\n\n\n        ...es...\n\n\n\n" > /home/turtle17/'La Respuesta'
+figlet 42 -kc >> /home/turtle17/'La Respuesta'
+echo -e "\n\n\n\nLa respuesta es correcta, pero si no te satisface, es porque la pregunta está mal formulada.\n\n" >> /home/turtle17/'La Respuesta'
+chmod 644 /home/turtle17/'La Respuesta'
 
 echo
 echo "Contraseñas generadas"

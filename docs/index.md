@@ -1,6 +1,6 @@
 Un grupo de exploradores de una raza de seres pandimensionales e hiperinteligentes construyeron **Pensamiento Profundo**, la segunda mejor computadora de todos los tiempos, para obtener la respuesta al sentido de la vida, el universo y todo lo demás. Después de siete millones y medio de años meditando la pregunta, **Pensamiento Profundo** tiene la respuesta.
 
-El **Sr. Tortuga**, un apasionado de la reflexión y del conocimiento, desea avrifuar la respuesta a semejente pregunta trascendental, y para ello quiere meterse en las entrañas del supercomputador **Pensamiento Profundo**. Pero el **Sr. Cangrejo**, que cuestiona la capacidad de las máquinas para replicar completamente la complejidad y la profundidad del pensamiento humano, va a evitar a toda costa que el **Sr. Tortuga** averigüe la respuesta.
+El **Sr. Tortuga**, un apasionado de la reflexión y del conocimiento, desea averiguar la respuesta a semejente pregunta trascendental, y para ello quiere meterse en las entrañas del supercomputador **Pensamiento Profundo**. Pero el **Sr. Cangrejo**, que cuestiona la capacidad de las máquinas para replicar completamente la complejidad y la profundidad del pensamiento humano, va a evitar a toda costa que el **Sr. Tortuga** averigüe la respuesta.
 
 ¿Podrás ayudar al **Sr. Tortuga** a llegar hasta el final y averiguar la respuesta al sentido de la vida?
 
@@ -127,6 +127,14 @@ Pero ojo, el Sr. Cangrejo ha creado una nueva versión de ese fichero y ha borra
 Comandos que te pueden ayudar: `ls, cd, cat, git clone, git log, git diff`
 
 ## Nivel 16
+
+El Sr. Cangrejo ha dejado en localhost un servicio de red escuchando por un puerto al que le podemos mandar mensajes.
+
+La única pista que nos ha dado es que es un puerto que se encuentra entre el 20000 y el 30000.
+
+Para que nos devuelva la respuesta correcta hemos de pasar un número octal de 3 cifras relacionado con los permisos del fichero cangrejo. 
+
+Comandos que te pueden ayudar: `nmap, nc, ssh, ls`
 
 ## Nivel 17
 
