@@ -8,7 +8,7 @@ fi
 
 # Directorio donde está instalado este script
 script=$(readlink -f $0)
-dir_base=`dirname $script`
+dirbase=`dirname $script`
 
 # Niveles (incluido el 0)
 niveles=18
