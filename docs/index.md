@@ -32,7 +32,7 @@ Comandos que te pueden ayudar: `ls, cd, cat, grep, file`
 
 ## Nivel 3
 
-La contraseña del siguiente nivel está almacenada junto a la cadena de texto p@ssW0rd
+La contraseña del siguiente nivel está almacenada junto a la cadena de texto *p@ssW0rd*
 
 Comandos que te pueden ayudar: `ls, cd, cat, find, grep, file`
 
@@ -44,9 +44,9 @@ Comandos que te pueden ayudar: `ls, cd, cat, find, file`
 
 ## Nivel 5
 
-La contraseña del siguiente nivel está almacenada en un fichero de 33 bytes cuyo grupo porpietario es turtle05, su usuario propietario es turtle06 y se encuentra ubicado en cualquier lugar del servidor.
+La contraseña del siguiente nivel está almacenada en un fichero de 33 bytes cuyo grupo porpietario es *turtle05*, su usuario propietario es *turtle06* y se encuentra ubicado en cualquier lugar del servidor.
 
-**CONSEJO**: estaría bien redireccionar la salida de error a /dev/null
+**CONSEJO**: estaría bien redireccionar la salida de error a */dev/null* para verlo mejor
 
 Comandos que te pueden ayudar: `ls, cd, cat, find, grep, file`
 
@@ -58,7 +58,7 @@ Comandos que te pueden ayudar: `ls, cd, cat, uniq, sort, find, grep, file*`
 
 ## Nivel 7
 
-La contraseña del siguiente nivel está almacenada en /etc/turtle_pass/turtle08, pero desgraciadamente solo la puede ver el usuario de nivel 7. No te preocupes, el señor Cangrejo nos ha dejado una clave privada de SSH para poder pasar de nivel.
+La contraseña del siguiente nivel está almacenada en */etc/turtle_pass/turtle08*, pero desgraciadamente sólo la puede ver el usuario de nivel 8. No te preocupes, el señor Cangrejo nos ha dejado una clave privada de SSH para poder pasar de nivel.
 
 Comandos que te pueden ayudar: `ls, cd, cat, ssh, scp, ssh-keygen`
 
@@ -90,7 +90,7 @@ Páginas de consulta: [Codificación base64](https://es.wikipedia.org/wiki/Base6
 
 La contraseña del siguiente nivel encontrarás si logras revertir el volcado hexadecimal de un fichero que ha estado múltiples veces comprimido y agrupado.
 
-Para trabajar mejor, créate un directorio de trabjo en /tmp y copia en él ese misterioso fichero que nos ha dejado el Sr. Cangrejo.
+Para trabajar mejor, créate un directorio de trabajo en /tmp y copia en él ese misterioso fichero que nos ha dejado el Sr. Cangrejo.
 
 Comandos que te pueden ayudar: `ls, cd, mkdir, cp, cat, file, tar, xxd, gzip, gunzip, bzip2, bunzip2`
 
@@ -106,7 +106,7 @@ Páginas de consulta: [Función Hash](https://es.wikipedia.org/wiki/Funci%C3%B3n
 
 ## Nivel 13
 
-La contraseña del siguiente nivel está almacenada en el fichero ~/password, pero el Sr. Cangrejo ha introducido un logout en ~/.bashrc.
+La contraseña del siguiente nivel está almacenada en el fichero *~/password*, pero el Sr. Cangrejo ha introducido un logout en ~/.bashrc.
 
 Comandos que te pueden ayudar: `ls, cd, cat, ssh`
 
@@ -132,7 +132,7 @@ El Sr. Cangrejo ha dejado en localhost un servicio de red escuchando por un puer
 
 La única pista que nos ha dado es que es un puerto que se encuentra entre el 20000 y el 30000.
 
-Para que nos devuelva la respuesta correcta hemos de pasar un número octal de 3 cifras relacionado con los permisos del fichero cangrejo. 
+Para que nos devuelva la respuesta correcta hemos de pasar un número octal de 3 cifras relacionado con los permisos del fichero *cangrejo*. 
 
 Comandos que te pueden ayudar: `nmap, nc, ssh, ls`
 
