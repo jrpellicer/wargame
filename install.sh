@@ -114,7 +114,7 @@ chown turtle01:turtle01 /home/turtle01/inhere -R
 chmod 500 /home/turtle01/inhere
 chmod 400 /home/turtle01/inhere/.oculto
 
-echo "echo -e 'El señor cangrejo ha escondido la contraseña del siguiente nivel en un fichero oculto.\n'" >> /home/turtle06/.bashrc
+echo "echo -e 'El señor cangrejo ha escondido la contraseña del siguiente nivel en un fichero oculto.\n'" >> /home/turtle01/.bashrc
 echo "echo -e 'Comandos relacionados: ls, cd, cat\n'" >> /home/turtle01/.bashrc
 
 ##################
@@ -136,7 +136,7 @@ cat /etc/turtle_pass/turtle04 > /home/turtle02/10101010
 chown turtle02:turtle02 /home/turtle02/10101010
 chmod 400 /home/turtle02/10101010
 
-echo "echo -e 'El señor cangrejo es un enamorado de los sistemas de numeración hexadecimal y binario, y ha guardado la contraseña en un fichero que está relacionado doblemente con la primera letra del abecedario.\n'" >> /home/turtle06/.bashrc
+echo "echo -e 'El señor cangrejo es un enamorado de los sistemas de numeración hexadecimal y binario, y ha guardado la contraseña en un fichero que está relacionado doblemente con la primera letra del abecedario.\n'" >> /home/turtle02/.bashrc
 echo "echo -e 'Comandos relacionados: ls, cd, cat, grep, file\n'" >> /home/turtle02/.bashrc
 
 ##################
@@ -150,8 +150,8 @@ for ((i=0; i<290; i++)); do
     fi
 done
 
-echo "echo -e 'La contraseña del siguiente nivel está almacenada junto a la cadena de texto p@ssW0rd.\n'" >> /home/turtle04/.bashrc 
-echo "echo -e 'Comandos relacionados: ls, cd, cat, find, grep, file\n'" >> /home/turtle04/.bashrc
+echo "echo -e 'La contraseña del siguiente nivel está almacenada junto a la cadena de texto p@ssW0rd.\n'" >> /home/turtle03/.bashrc 
+echo "echo -e 'Comandos relacionados: ls, cd, cat, find, grep, file\n'" >> /home/turtle03/.bashrc
 
 ##################
 # Level 4
