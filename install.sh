@@ -341,7 +341,7 @@ echo "echo -e 'Comandos relacionados: ls, cd, cat, git clone, git log, git diff\
 ##################
 # Level 16
 ##################
-echo "@reboot python3 $dirbase/servidor.py" >> /etc/cron.d
+echo "@reboot python3 $dirbase/servidor.py" >> /etc/crontab
 python3 $dirbase/servidor.py &
 
 cp $dirbase/cangrejo /home/turtle16/
