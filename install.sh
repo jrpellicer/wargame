@@ -153,11 +153,13 @@ echo "echo -e 'Comandos relacionados: ls, cd, cat, grep, file\n'" >> /home/turtl
 ##################
 for ((i=0; i<290; i++)); do
     contenido=$(< /dev/urandom tr -dc '@#!&)(%= A-Za-z0-9' | head -c 42 ; echo)
-    echo "$contenido" >> fichero
+    echo "$contenido" >> /home/turtle03/random
     if [ $i -eq 71 ]; then
-        echo "p@ssW0rD: `cat /etc/turtle_pass/turtle04`" >> fichero
+        echo "p@ssW0rd: `cat /etc/turtle_pass/turtle04`" >> /home/turtle03/random
     fi
 done
+chown turtle03:turtle03 /home/turtle03/random
+chmod 400 /home/turtle02/random
 
 echo "echo -e 'La contraseña del siguiente nivel está almacenada junto a la cadena de texto p@ssW0rd.\n'" >> /home/turtle03/.bashrc 
 echo "echo -e 'Comandos relacionados: ls, cd, cat, find, grep, file\n'" >> /home/turtle03/.bashrc
