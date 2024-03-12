@@ -131,8 +131,17 @@ for file_name in "${file_names[@]}"; do
     chmod 400 /home/turtle02/$file_name
 done
 
+# Crear archivos trampa
+cp cangrejo /home/turtle02/.AA
+chown turtle02:turtle02 /home/turtle02/.AA
+chmod 400 /home/turtle02/.AA
+
+cp tortuga /home/turtle02/.aa
+chown turtle02:turtle02 /home/turtle02/.aa
+chmod 400 /home/turtle02/.aa
+
 # Crear archivo con la clave
-cat /etc/turtle_pass/turtle04 > /home/turtle02/10101010
+cat /etc/turtle_pass/turtle03 > /home/turtle02/10101010
 chown turtle02:turtle02 /home/turtle02/10101010
 chmod 400 /home/turtle02/10101010
 
@@ -364,9 +373,9 @@ figlet 42 -kc >> /home/turtle17/'La Respuesta'
 echo -e "\n\n\n\nLa respuesta es correcta, pero si no te satisface, es porque la pregunta está mal formulada.\n\n" >> /home/turtle17/'La Respuesta'
 chmod 644 /home/turtle17/'La Respuesta'
 
+systemctl restart sshd
+
 echo
 echo "Contraseñas generadas"
 echo "====================="
 cat /etc/turtle_pass/turtle*
-echo
-echo "Para que se apliquen los cambios en el servicio ssh, reinicia el servicio con sudo systemctl restart sshd"
