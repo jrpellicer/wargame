@@ -279,7 +279,7 @@ echo "echo -e 'Páginas de ayuda: https://es.wikipedia.org/wiki/Base64\n'" >> /h
 ##################
 # Level 11
 ##################
-tar c /etc/turtle_pass/turtle12 | gzip | bzip2 | gzip | xxd > /home/turtle11/password.hex
+tar c -C /etc/turtle_pass turtle12 | gzip | bzip2 | gzip | xxd > /home/turtle11/password.hex
 
 echo "echo -e 'La contraseña del siguiente nivel encontrarás si logras revertir el volcado hexadecimal de un fichero que ha estado múltiples veces comprimido y agrupado.\n'" | sudo tee -a /home/turtle11/.bashrc > /dev/null
 echo "echo -e 'Para trabajar mejor, créate un directorio de trabjo en /tmp y copia en él ese misterioso fichero que nos ha dejado el Sr. Cangrejo.\n'" >> /home/turtle11/.bashrc
