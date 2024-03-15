@@ -38,8 +38,8 @@ chmod o-r /tmp
 apt update
 apt install figlet -y
 
-# Instalar bzip2 y xxd
-apt install bzip2 xxd git -y
+# Instalar bzip2, xxd, git y nmap
+apt install bzip2 xxd git nmap -y
 
 # Crear el directorio si no existe
 if [ ! -d "$password_dir" ]; then
@@ -282,7 +282,7 @@ echo "echo -e 'Páginas de ayuda: https://es.wikipedia.org/wiki/Base64\n'" >> /h
 tar c -C /etc/turtle_pass turtle12 | gzip | bzip2 | gzip | xxd > /home/turtle11/password.hex
 
 echo "echo -e 'La contraseña del siguiente nivel encontrarás si logras revertir el volcado hexadecimal de un fichero que ha estado múltiples veces comprimido y agrupado.\n'" | sudo tee -a /home/turtle11/.bashrc > /dev/null
-echo "echo -e 'Para trabajar mejor, créate un directorio de trabjo en /tmp y copia en él ese misterioso fichero que nos ha dejado el Sr. Cangrejo.\n'" >> /home/turtle11/.bashrc
+echo "echo -e 'Para trabajar mejor, créate un directorio de trabajo en /tmp y copia en él ese misterioso fichero que nos ha dejado el Sr. Cangrejo.\n'" >> /home/turtle11/.bashrc
 echo "echo -e 'Comandos relacionados: ls, cd, mkdir, cp, cat, file, tar, xxd, gzip, gunzip, bzip2, bunzip2'" >> /home/turtle11/.bashrc
 echo "echo -e 'Páginas de ayuda: https://en.wikipedia.org/wiki/Hex_dump\n'" >> /home/turtle11/.bashrc
 
@@ -347,6 +347,7 @@ git -C /opt/git/turtle.git commit -m "Ocultación de contraseña"
 
 echo "echo -e 'La contraseña del siguente nivel está guardada en un fichero del repositorio localhost:/opt/git/turtle.git\n'" | sudo tee -a /home/turtle15/.bashrc > /dev/null 
 echo "echo -e 'Pero ojo, el Sr. Cangrejo ha creado una nueva versión de ese fichero y ha borrado la contraseña.\n'" | sudo tee -a /home/turtle15/.bashrc > /dev/null 
+echo "echo -e 'Para trabajar mejor, créate otro directorio de trabajo en /tmp para clonar el repositorio.\n'" >> /home/turtle15/.bashrc
 echo "echo -e 'Comandos relacionados: ls, cd, cat, git clone, git log, git diff\n'" >> /home/turtle15/.bashrc
 
 ##################
@@ -362,7 +363,7 @@ chmod 640 /home/turtle16/cangrejo
 chgrp turtle16 /home/turtle16/tortuga
 chmod 640 /home/turtle16/tortuga
 
-echo "echo -e 'El Sr. Cangrejo ha dejado en localhost un servicio de red escuchando por un puerto alque le podemos mandar mensajes.'" | sudo tee -a /home/turtle16/.bashrc > /dev/null 
+echo "echo -e 'El Sr. Cangrejo ha dejado en localhost un servicio de red escuchando por un puerto al que le podemos mandar mensajes.'" | sudo tee -a /home/turtle16/.bashrc > /dev/null 
 echo "echo -e 'La única pista que nos ha dado es que es un puerto que se encuentra entre el 20000 y el 30000.\n'" | sudo tee -a /home/turtle16/.bashrc > /dev/null
 echo "echo -e 'Para que nos devuelva la respuesta correcta hemos de pasar un número octal de 3 cifras relacionado con los permisos del fichero cangrejo.\n'" | sudo tee -a /home/turtle16/.bashrc > /dev/null 
 echo "echo -e 'Comandos relacionados: nmap, nc, ssh, ls\n'" >> /home/turtle16/.bashrc

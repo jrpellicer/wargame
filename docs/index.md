@@ -6,7 +6,7 @@ El **Sr. Tortuga**, un apasionado de la reflexión y del conocimiento, desea ave
 
 # Instrucciones
 
-Conéctate por ssh a la dirección IP que te proporcione el profesor para ir pasando los niveles hasta alcanzar la respuesta a la pregunta trascendental. En cada nivel encontrarás la contraseña con la que acceder al siguiente.
+Conéctate por ssh a la dirección IP que te proporcione el profesor para ir pasando los niveles hasta alcanzar la respuesta a **La Gran Pregunta**. En cada nivel encontrarás la contraseña con la que acceder al siguiente.
 
 Para empezar a jugar, el usuario del nivel 0 es **turtle00** y su contraseña es **turtle00**. Los usuarios de los niveles sucesivos serán *turtleXX* donde XX indica el número de nivel.
 
@@ -123,6 +123,8 @@ La contraseña del siguente nivel está guardada en un fichero del siguiente rep
 localhost:/opt/git/turtle.git
 ```
 Pero ojo, el Sr. Cangrejo ha creado una nueva versión de ese fichero y ha borrado la contraseña.
+
+Créate otro directorio en /tmp para poder clonar el repositorio.
 
 Comandos que te pueden ayudar: `ls, cd, cat, git clone, git log, git diff`
 
