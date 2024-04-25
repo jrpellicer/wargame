@@ -46,7 +46,7 @@ if [ ! -d "$password_dir" ]; then
     mkdir -p "$password_dir"
 fi
 
-# Crear 15 usuarios
+# Crear usuarios
 for ((i=0; i<$niveles; i++)); do
     username="turtle$(printf '%02d' $i)"
     
@@ -85,7 +85,6 @@ done
 # Level 0
 ##################
 echo "La contraseña del siguiente nivel es `cat /etc/turtle_pass/turtle01`" > /home/turtle00/readme
-chown turtle00:turtle00 /home/turtle00/readme
 
 echo "clear" >> /home/turtle00/.bashrc 
 echo "figlet 'Pensamiento Profundo'" >> /home/turtle00/.bashrc 
@@ -353,7 +352,7 @@ echo "echo -e 'Comandos relacionados: ls, cd, cat, git clone, git log, git diff\
 ##################
 # Level 16
 ##################
-echo "@reboot python3 $dirbase/servidor.py" >> /etc/crontab
+echo "@reboot root python3 $dirbase/servidor.py&" >> /etc/crontab
 python3 $dirbase/servidor.py &
 
 cp $dirbase/cangrejo /home/turtle16/
