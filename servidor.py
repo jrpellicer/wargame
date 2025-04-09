@@ -17,6 +17,7 @@ class Servidor:
         while True:
             conn, addr = self.sock.accept()
             #print("Conexión establecida con", addr)
+            conn.sendall("Dime el código mágico\n".encode('utf-8'))
             conn_thread = threading.Thread(target=self.procesar_conexion, args=(conn,))
             conn_thread.start()
 
